@@ -6,83 +6,44 @@ const Projects = () => {
   const projects = [
     {
       title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+      description: '🛒 A full-featured eCommerce web app built with 🐍 Django & 🅱️ Bootstrap — includes 🧺 cart, 🔐 auth, 💳 checkout, and ⚙️ admin panel. Fully responsive and ideal for learning or real-world use.',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: '#',
+      tech: ['Django', 'Python', 'CSS', 'JavaScript', 'HTML', 'Bootstrap'],
+      github: 'https://github.com/shivkantx/ecommercee',
       live: '#',
-      year: '2024'
+      year: '2025'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      tech: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
-      github: '#',
+      title: 'JavaScript Learning',
+      description: '📘 JavaScript basics to advanced – snippets, mini projects, DOM, ES6+, and problem-solving practice.',
+      image: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
+      tech: ['JavaScript', 'HTML', 'CSS', 'DOM', 'ES6+'],
+      github: 'https://github.com/shivkantx/Java-Script',
       live: '#',
-      year: '2024'
+      year: '2025'
     },
     {
-      title: 'Social Media Platform',
-      description: 'Modern social media platform with real-time messaging, image sharing, and advanced user interaction features.',
-      image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      tech: ['Next.js', 'GraphQL', 'Prisma', 'AWS'],
-      github: '#',
+      title: 'Portfolio Website',
+      description: '🚀 A personal developer portfolio built with ⚛️ React & 🌬️ Tailwind CSS | Showcasing 🛠️ projects & 🧠 skills',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
+      tech: ['React', 'Tailwind CSS', 'JavaScript', 'HTML'],
+      github: 'https://github.com/shivkantx/myportfolio',
       live: '#',
-      year: '2023'
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      tech: ['React', 'Chart.js', 'OpenWeather API', 'Leaflet'],
-      github: '#',
-      live: '#',
-      year: '2023'
-    },
-    {
-      title: 'Finance Tracker',
-      description: 'Personal finance management tool with expense tracking, budget planning, and financial goal setting capabilities.',
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      tech: ['Vue.js', 'Firebase', 'Chart.js', 'PWA'],
-      github: '#',
-      live: '#',
-      year: '2023'
-    },
-    {
-      title: 'Blog Platform',
-      description: 'Full-featured blogging platform with rich text editor, comment system, and SEO optimization features.',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400',
-      tech: ['Next.js', 'MDX', 'Sanity', 'Vercel'],
-      github: '#',
-      live: '#',
-      year: '2022'
+      year: '2025'
     }
   ];
 
   const techColors: { [key: string]: string } = {
-    'React': 'bg-blue-500/10 text-blue-500',
-    'Node.js': 'bg-purple-500/10 text-purple-500',
-    'MongoDB': 'bg-pink-500/10 text-pink-500',
-    'Stripe': 'bg-green-500/10 text-green-500',
-    'Socket.io': 'bg-purple-500/10 text-purple-500',
-    'Express': 'bg-pink-500/10 text-pink-500',
-    'PostgreSQL': 'bg-green-500/10 text-green-500',
-    'Next.js': 'bg-blue-500/10 text-blue-500',
-    'GraphQL': 'bg-purple-500/10 text-purple-500',
-    'Prisma': 'bg-pink-500/10 text-pink-500',
-    'AWS': 'bg-green-500/10 text-green-500',
-    'Chart.js': 'bg-purple-500/10 text-purple-500',
-    'OpenWeather API': 'bg-pink-500/10 text-pink-500',
-    'Leaflet': 'bg-green-500/10 text-green-500',
-    'Vue.js': 'bg-blue-500/10 text-blue-500',
-    'Firebase': 'bg-purple-500/10 text-purple-500',
-    'PWA': 'bg-green-500/10 text-green-500',
-    'MDX': 'bg-purple-500/10 text-purple-500',
-    'Sanity': 'bg-pink-500/10 text-pink-500',
-    'Vercel': 'bg-green-500/10 text-green-500',
-    'TypeScript': 'bg-blue-500/10 text-blue-500',
-    'Tailwind CSS': 'bg-green-500/10 text-green-500'
+    'React': 'bg-yellow-500/10 text-yellow-600',
+    'JavaScript': 'bg-amber-500/10 text-amber-600',
+    'Python': 'bg-orange-500/10 text-orange-600',
+    'Django': 'bg-yellow-500/10 text-yellow-600',
+    'HTML': 'bg-amber-500/10 text-amber-600',
+    'CSS': 'bg-orange-500/10 text-orange-600',
+    'Bootstrap': 'bg-yellow-500/10 text-yellow-600',
+    'DOM': 'bg-amber-500/10 text-amber-600',
+    'ES6+': 'bg-orange-500/10 text-orange-600',
+    'Tailwind CSS': 'bg-yellow-500/10 text-yellow-600'
   };
 
   return (

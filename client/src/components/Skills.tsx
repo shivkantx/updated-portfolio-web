@@ -9,24 +9,24 @@ const Skills = () => {
       title: 'Frontend',
       description: 'Creating beautiful user interfaces',
       skills: [
-        { name: 'React', level: 90 },
         { name: 'JavaScript', level: 85 },
-        { name: 'Tailwind CSS', level: 80 },
-        { name: 'TypeScript', level: 75 }
+        { name: 'HTML/CSS', level: 90 },
+        { name: 'React', level: 75 },
+        { name: 'Bootstrap', level: 80 }
       ],
-      gradient: 'from-blue-600 to-purple-600'
+      gradient: 'from-yellow-600 to-amber-500'
     },
     {
       icon: Server,
       title: 'Backend',
       description: 'Building robust server solutions',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 80 },
-        { name: 'MongoDB', level: 75 },
-        { name: 'REST APIs', level: 85 }
+        { name: 'Python', level: 85 },
+        { name: 'Django', level: 80 },
+        { name: 'Web Development', level: 85 },
+        { name: 'Database Design', level: 75 }
       ],
-      gradient: 'from-purple-600 to-pink-500'
+      gradient: 'from-amber-500 to-orange-500'
     },
     {
       icon: Wrench,
@@ -34,11 +34,11 @@ const Skills = () => {
       description: 'Development tools and platforms',
       skills: [
         { name: 'Git & GitHub', level: 90 },
-        { name: 'Docker', level: 70 },
-        { name: 'AWS', level: 65 },
-        { name: 'Figma', level: 75 }
+        { name: 'VS Code', level: 85 },
+        { name: 'Problem Solving', level: 88 },
+        { name: 'Learning', level: 95 }
       ],
-      gradient: 'from-pink-500 to-blue-600'
+      gradient: 'from-orange-500 to-yellow-600'
     }
   ];
 

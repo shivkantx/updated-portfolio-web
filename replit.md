@@ -100,7 +100,11 @@ The application follows a monorepo structure with clear separation between clien
 
 ## Changelog
 - July 02, 2025. Initial setup
+- July 02, 2025. Updated to golden theme with transparent backgrounds, corrected name to "Shiv Kant", integrated real GitHub projects
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Theme preference: Golden color scheme with transparent backgrounds
+Name: Shiv Kant (not Shivkant Kumar)
+Content preference: Use only real GitHub projects and actual skills, no placeholder content

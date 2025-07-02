@@ -49,25 +49,25 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-500/20 dark:from-blue-600/10 dark:via-purple-600/10 dark:to-pink-500/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-amber-500/20 to-orange-500/20 dark:from-yellow-500/10 dark:via-amber-500/10 dark:to-orange-500/10" />
       
       {/* Floating Elements */}
       <motion.div
         variants={floatingVariants}
         animate="floating"
-        className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-full mix-blend-multiply filter blur-xl opacity-70"
+        className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-yellow-500/30 to-amber-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70"
       />
       <motion.div
         variants={floatingVariants}
         animate="floating"
         style={{ animationDelay: '2s' }}
-        className="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-purple-600/30 to-pink-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70"
+        className="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-amber-500/30 to-orange-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70"
       />
       <motion.div
         variants={floatingVariants}
         animate="floating"
         style={{ animationDelay: '4s' }}
-        className="absolute -bottom-8 left-20 w-72 h-72 bg-gradient-to-r from-pink-500/30 to-blue-600/30 rounded-full mix-blend-multiply filter blur-xl opacity-70"
+        className="absolute -bottom-8 left-20 w-72 h-72 bg-gradient-to-r from-orange-500/30 to-yellow-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70"
       />
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
@@ -78,7 +78,7 @@ const Hero = () => {
           animate="visible"
           className="mb-8"
         >
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
+          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 p-1">
             <div className="w-full h-full rounded-full bg-slate-300 dark:bg-slate-700 flex items-center justify-center">
               <span className="text-4xl font-bold gradient-text">SK</span>
             </div>
@@ -93,7 +93,7 @@ const Hero = () => {
           className="text-5xl md:text-7xl font-bold mb-6"
         >
           <span className="gradient-text">
-            Shivkant Kumar
+            Shiv Kant
           </span>
         </motion.h1>
         
@@ -104,7 +104,7 @@ const Hero = () => {
           animate="visible"
           className="text-2xl md:text-3xl font-light mb-8 h-12"
         >
-          <span className="border-r-2 border-blue-600 animate-pulse">
+          <span className="border-r-2 border-yellow-600 animate-pulse">
             {currentText}
           </span>
         </motion.div>
@@ -117,7 +117,7 @@ const Hero = () => {
           className="text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto"
         >
           Passionate about creating beautiful, functional web applications with modern technologies. 
-          Specializing in React, Node.js, and cloud deployment solutions.
+          Specializing in JavaScript, Python, Django, and frontend development.
         </motion.p>
         
         {/* Tech Badges */}
@@ -128,7 +128,7 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
-          {['React', 'Node.js', 'MongoDB', 'Tailwind CSS', 'TypeScript'].map((tech) => (
+          {['JavaScript', 'Python', 'Django', 'HTML/CSS', 'React'].map((tech) => (
             <motion.span
               key={tech}
               whileHover={{ scale: 1.1 }}
@@ -151,7 +151,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => scrollToSection('#projects')}
-            className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-xl transition-all duration-300 font-medium"
+            className="px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-500 text-white rounded-lg hover:shadow-xl transition-all duration-300 font-medium"
           >
             View Projects
           </motion.button>

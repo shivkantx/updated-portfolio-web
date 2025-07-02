@@ -11,7 +11,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-slate-400 mb-4"
         >
-          © 2024 Shivkant Kumar. All rights reserved.
+          © 2025 Shiv Kant. All rights reserved.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

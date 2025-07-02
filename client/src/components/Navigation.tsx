@@ -48,7 +48,7 @@ const Navigation = () => {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="nav-link text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="nav-link text-sm font-medium hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors"
                 >
                   {item.label}
                 </button>
@@ -97,7 +97,7 @@ const Navigation = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors"
                 >
                   {item.label}
                 </motion.button>

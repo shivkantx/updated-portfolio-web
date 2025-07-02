@@ -63,17 +63,17 @@ const About = () => {
                 Full Stack Developer
               </motion.h3>
               <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                I'm a passionate full-stack developer with expertise in modern web technologies. 
-                I love creating intuitive, dynamic user experiences and robust backend systems. 
+                I'm a passionate developer with expertise in JavaScript, Python, and Django. 
+                I love creating beautiful, functional web applications and learning new technologies. 
                 My journey in web development started with curiosity and has evolved into a deep 
-                passion for building solutions that make a difference.
+                passion for building solutions that solve real-world problems.
               </p>
               
               <div className="space-y-4">
                 {[
-                  { icon: Code, text: '3+ Years of Experience' },
-                  { icon: Award, text: '20+ Projects Completed' },
-                  { icon: Users, text: 'Computer Science Graduate' }
+                  { icon: Code, text: 'JavaScript & Python Expert' },
+                  { icon: Award, text: 'Multiple Projects Completed' },
+                  { icon: Users, text: 'Self-Taught Developer' }
                 ].map(({ icon: Icon, text }, index) => (
                   <motion.div
                     key={index}
