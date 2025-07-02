@@ -47,7 +47,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 via-amber-500/20 to-orange-500/20 dark:from-yellow-500/10 dark:via-amber-500/10 dark:to-orange-500/10" />
       
@@ -175,8 +175,8 @@ const Hero = () => {
         >
           {[
             { icon: Github, href: 'https://github.com/shivkantx' },
-            { icon: Linkedin, href: '#' },
-            { icon: Twitter, href: '#' },
+            { icon: Linkedin, href: 'https://www.linkedin.com/in/shiv-kant-036a17289/' },
+            { icon: Twitter, href: 'https://x.com/ShivkantPal8' },
             { icon: Mail, href: 'mailto:your.email@example.com' }
           ].map(({ icon: Icon, href }, index) => (
             <motion.a

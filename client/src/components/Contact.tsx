@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram, Send, Youtube, Facebook } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -87,9 +87,11 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/shivkantx', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' }
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/shiv-kant-036a17289/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://x.com/ShivkantPal8', label: 'Twitter' },
+    { icon: Instagram, href: 'https://www.instagram.com/shivkant252/', label: 'Instagram' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100094362865495', label: 'Facebook' },
+    { icon: Youtube, href: 'https://www.youtube.com/@actshivkantgaming8331', label: 'YouTube' }
   ];
 
   return (
