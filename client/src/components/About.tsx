@@ -11,8 +11,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+      {/* Blur Gray Background */}
+      <div className="absolute inset-0 bg-gray-100 dark:bg-gray-900" />
+      <div className="absolute inset-0 backdrop-blur-sm bg-gray-200/30 dark:bg-gray-800/30" />
+      
+      <div className="max-w-6xl mx-auto relative">
         <motion.div
           variants={fadeInUpVariants}
           initial="hidden"
@@ -20,7 +24,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
             About Me
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400">
@@ -38,7 +42,7 @@ const About = () => {
             viewport={{ once: true }}
             className="lg:col-span-1"
           >
-            <div className="glass-card rounded-3xl p-8 text-center h-full">
+            <div className="bg-gray-200/50 dark:bg-gray-700/50 backdrop-blur-md rounded-3xl p-8 text-center h-full border border-gray-300/30 dark:border-gray-600/30">
               {/* Profile Image */}
               <div className="relative mb-6">
                 <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 p-1">
@@ -51,7 +55,7 @@ const About = () => {
                 </div>
               </div>
               
-              <h3 className="text-2xl font-bold mb-2 gradient-text">Shiv Kant</h3>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">Shiv Kant</h3>
               <p className="text-slate-600 dark:text-slate-400 mb-6">Full Stack Developer</p>
               
               {/* Key Skills */}
@@ -63,7 +67,7 @@ const About = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-center justify-between p-3 glass-card rounded-lg"
+                    className="flex items-center justify-between p-3 bg-gray-200/40 dark:bg-gray-700/40 backdrop-blur-sm rounded-lg border border-gray-300/20 dark:border-gray-600/20"
                   >
                     <span className="font-medium">{skill}</span>
                     <div className="flex space-x-1">
@@ -91,12 +95,12 @@ const About = () => {
             className="lg:col-span-2 space-y-6"
           >
             {/* Main Description */}
-            <div className="glass-card rounded-3xl p-8">
+            <div className="bg-gray-200/50 dark:bg-gray-700/50 backdrop-blur-md rounded-3xl p-8 border border-gray-300/30 dark:border-gray-600/30">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-xl flex items-center justify-center mr-4">
                   <Code className="text-white" size={24} />
                 </div>
-                <h3 className="text-3xl font-bold gradient-text">About Me</h3>
+                <h3 className="text-3xl font-bold text-gray-900 dark:text-gray-100">About Me</h3>
               </div>
               
               <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
@@ -114,7 +118,7 @@ const About = () => {
             </div>
             
             {/* Achievements */}
-            <div className="glass-card rounded-3xl p-8">
+            <div className="bg-gray-200/50 dark:bg-gray-700/50 backdrop-blur-md rounded-3xl p-8 border border-gray-300/30 dark:border-gray-600/30">
               <h4 className="text-xl font-bold mb-6 flex items-center">
                 <Award className="mr-3 text-yellow-600" size={24} />
                 Key Highlights
@@ -130,7 +134,7 @@ const About = () => {
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="flex items-start space-x-3 p-4 glass-card rounded-xl"
+                    className="flex items-start space-x-3 p-4 bg-gray-200/40 dark:bg-gray-700/40 backdrop-blur-sm rounded-xl border border-gray-300/20 dark:border-gray-600/20"
                   >
                     <div className="w-10 h-10 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Icon size={18} className="text-white" />
@@ -158,12 +162,12 @@ const About = () => {
             <motion.div
               key={index}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="glass-card rounded-2xl p-6 text-center group"
+              className="bg-gray-200/50 dark:bg-gray-700/50 backdrop-blur-md rounded-2xl p-6 text-center group border border-gray-300/30 dark:border-gray-600/30"
             >
               <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:rotate-6 transition-transform duration-300">
                 <Icon className="text-white" size={28} />
               </div>
-              <div className="text-3xl font-bold gradient-text mb-2">{value}</div>
+              <div className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">{value}</div>
               <div className="font-semibold text-slate-900 dark:text-slate-100 mb-1">{label}</div>
               <div className="text-sm text-slate-600 dark:text-slate-400">{description}</div>
             </motion.div>

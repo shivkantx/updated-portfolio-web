@@ -29,14 +29,14 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 glass-card"
+      className="fixed top-0 left-0 right-0 z-50 bg-gray-200/80 dark:bg-gray-800/80 backdrop-blur-lg border-b border-gray-300/30 dark:border-gray-600/30"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.1 }}
-            className="text-2xl font-bold gradient-text"
+            className="text-2xl font-bold text-gray-900 dark:text-gray-100"
           >
             SK
           </motion.div>
