@@ -1,8 +1,22 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Code, Award, Users, Coffee } from 'lucide-react';
 import { fadeInUpVariants, slideInLeftVariants, slideInRightVariants } from '@/lib/animations';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out-cubic',
+      once: false,
+      mirror: true,
+      offset: 100,
+      delay: 100
+    });
+  }, []);
+
   const stats = [
     { icon: Code, label: 'Technologies', value: '5+', description: 'Languages & Frameworks' },
     { icon: Award, label: 'Projects', value: '3+', description: 'Completed Works' },
@@ -17,20 +31,35 @@ const About = () => {
       <div className="absolute inset-0 backdrop-blur-sm bg-gray-200/30 dark:bg-gray-800/30" />
       
       <div className="max-w-6xl mx-auto relative">
-        <motion.div
-          variants={fadeInUpVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+        <div 
           className="text-center mb-16"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+          <h2 
+            className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
             About Me
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400">
+          <div 
+            className="w-24 h-1 bg-gradient-to-r from-yellow-500 to-amber-500 mx-auto mb-6"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          />
+          <p 
+            className="text-xl text-slate-600 dark:text-slate-400"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             Get to know more about my journey and passion for technology
           </p>
-        </motion.div>
+        </div>
         
         {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">

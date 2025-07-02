@@ -142,43 +142,95 @@ const Hero = () => {
           </div>
           
           {/* Visual Side */}
-          <div className="flex flex-col items-center">
-            {/* Profile Image */}
+          <div className="flex flex-col items-center relative">
+            {/* Floating Background Elements */}
+            <div className="absolute inset-0 -z-10">
+              <motion.div
+                variants={floatingVariants}
+                animate="floating"
+                className="absolute top-10 right-10 w-32 h-32 bg-yellow-500/20 rounded-full blur-2xl"
+              />
+              <motion.div
+                variants={floatingVariants}
+                animate="floating"
+                style={{ animationDelay: '1s' }}
+                className="absolute bottom-10 left-10 w-24 h-24 bg-amber-500/20 rounded-full blur-2xl"
+              />
+            </div>
+
+            {/* Profile Image with Enhanced Design */}
             <motion.div
               variants={fadeInUpVariants}
               initial="hidden"
               animate="visible"
               transition={{ delay: 0.3 }}
-              className="mb-8"
+              className="mb-8 relative"
             >
-              <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 p-1">
-                <div className="w-full h-full rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
-                  <span className="text-5xl font-bold text-yellow-600">SK</span>
+              <div className="relative">
+                <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-yellow-500 to-amber-500 p-2 shadow-2xl">
+                  <div className="w-full h-full rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden">
+                    <span className="text-6xl font-bold text-yellow-600">SK</span>
+                    {/* Animated border effect */}
+                    <div className="absolute inset-0 rounded-full border-4 border-yellow-500/30 animate-ping" />
+                  </div>
+                </div>
+                {/* Status indicator */}
+                <div className="absolute bottom-4 right-4 w-6 h-6 bg-green-500 rounded-full border-4 border-white dark:border-gray-800 shadow-lg">
+                  <div className="w-full h-full bg-green-500 rounded-full animate-pulse" />
                 </div>
               </div>
             </motion.div>
             
-            {/* Tech Stack Preview */}
+            {/* Enhanced Tech Stack Grid */}
             <motion.div
               variants={fadeInUpVariants}
               initial="hidden"
               animate="visible"
               transition={{ delay: 0.5 }}
-              className="grid grid-cols-2 gap-4 w-full max-w-sm"
+              className="grid grid-cols-2 gap-4 w-full max-w-md mb-8"
             >
               {[
-                { name: 'JavaScript', icon: '⚡' },
-                { name: 'Python', icon: '🐍' },
-                { name: 'React', icon: '⚛️' },
-                { name: 'Django', icon: '🌟' }
+                { name: 'JavaScript', icon: '⚡', color: 'from-yellow-400 to-orange-500' },
+                { name: 'Python', icon: '🐍', color: 'from-blue-500 to-green-500' },
+                { name: 'React', icon: '⚛️', color: 'from-cyan-400 to-blue-500' },
+                { name: 'Django', icon: '🌟', color: 'from-green-500 to-teal-500' }
               ].map((tech, index) => (
                 <motion.div
                   key={tech.name}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  className="flex items-center space-x-2 p-3 bg-gray-200/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-lg"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 + index * 0.1 }}
+                  whileHover={{ scale: 1.05, y: -3 }}
+                  className="relative group"
                 >
-                  <span className="text-lg">{tech.icon}</span>
-                  <span className="font-medium text-sm">{tech.name}</span>
+                  <div className={`absolute inset-0 bg-gradient-to-r ${tech.color} rounded-xl opacity-20 group-hover:opacity-30 transition-opacity`} />
+                  <div className="relative flex items-center space-x-3 p-4 bg-gray-200/60 dark:bg-gray-700/60 backdrop-blur-sm rounded-xl border border-gray-300/30 dark:border-gray-600/30 shadow-lg">
+                    <span className="text-2xl">{tech.icon}</span>
+                    <span className="font-semibold text-sm">{tech.name}</span>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Experience Stats */}
+            <motion.div
+              variants={fadeInUpVariants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 0.8 }}
+              className="grid grid-cols-2 gap-6 w-full max-w-md"
+            >
+              {[
+                { number: '3+', label: 'Projects' },
+                { number: '5+', label: 'Technologies' }
+              ].map((stat, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.05 }}
+                  className="text-center p-4 bg-gray-200/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-xl border border-gray-300/30 dark:border-gray-600/30"
+                >
+                  <div className="text-3xl font-bold text-yellow-600 mb-1">{stat.number}</div>
+                  <div className="text-sm font-medium text-gray-600 dark:text-gray-400">{stat.label}</div>
                 </motion.div>
               ))}
             </motion.div>

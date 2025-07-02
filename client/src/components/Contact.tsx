@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram, Send, Youtube, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram, Send, Youtube, Facebook, MessageCircle, User, FileText } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useMutation } from '@tanstack/react-query';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
 import { fadeInUpVariants, slideInLeftVariants, slideInRightVariants } from '@/lib/animations';
@@ -22,6 +24,17 @@ type ContactFormData = z.infer<typeof contactSchema>;
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out-cubic',
+      once: false,
+      mirror: true,
+      offset: 100,
+      delay: 100
+    });
+  }, []);
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
