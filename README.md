@@ -2,21 +2,6 @@
 
 Welcome to my **Updated Portfolio Web** — a modern, responsive, and elegant portfolio built using **React + TypeScript** to showcase my projects, skills, and contact information.
 
-🔗 [Live Demo](https://your-deployment-url.com) <!-- Replace with your actual Netlify or GitHub Pages link -->
-
----
-
-## 📚 Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-
 ---
 
 ## 🧠 About
@@ -27,41 +12,34 @@ This is my personal developer portfolio designed to reflect my skills, creativit
 
 ## ✨ Features
 
-- 🧑 **About Me** — Learn about my background and experience  
-- 🛠️ **Skills** — A visual list of my core technologies  
-- 🗂️ **Projects** — Highlights of real-world projects with links  
-- 📄 **Resume Download** — Downloadable PDF  
-- ✉️ **Contact Form** — Direct email messaging  
-- 📱 **Fully Responsive** — Mobile-friendly design
+- 🧑 About Me — Overview of my background and goals  
+- 🛠️ Skills — Visual list of technologies I work with  
+- 🗂️ Projects — Highlights of selected real-world work  
+- 📄 Resume — Direct download option for my resume  
+- ✉️ Contact — Functional contact form for direct messages  
+- 📱 Fully Responsive — Mobile-friendly and modern design
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology       | Description                              | Icon |
-|------------------|------------------------------------------|------|
-| **⚛️ React**        | Frontend framework for UI components     | ⚛️   |
-| **🟦 TypeScript**   | Strongly typed JavaScript                | 🟦   |
-| **🟨 JavaScript**   | Core scripting logic and interactivity   | 🟨   |
-| **📄 HTML5**        | Semantic markup structure                | 📄   |
-| **🎨 CSS3**         | Styling and layout                       | 🎨   |
-| **🌀 Tailwind CSS** | Utility-first CSS framework (if used)    | 🌀   |
-| **🚀 Netlify**      | Deployment and hosting                   | 🚀   |
+- ⚛️ **React** – JavaScript library for building user interfaces  
+- 🟦 **TypeScript** – Type-safe JavaScript for scalable applications  
+- 🟨 **JavaScript (ES6+)** – Dynamic behavior and interactivity  
+- 📄 **HTML5** – Semantic structure and layout  
+- 🎨 **CSS3** – Styling and responsive design  
+- 🌀 **Tailwind CSS** – Utility-first styling framework (if used)
 
 ---
 
-## 🚀 Getting Started
+## 📄 License
 
-### 📦 Prerequisites
+This project is licensed under the MIT License.
 
-Ensure you have the following installed:
+---
 
-- **Node.js** (v14 or later)
-- **npm** or **yarn**
+## 🙌 Credits
 
-### 🔧 Installation
-
-```bash
-git clone https://github.com/shivkantx/updated-portfolio-web.git
-cd updated-portfolio-web
-npm install
+- Designed and developed by **Shiv Kant**  
+- Inspired by modern portfolio practices and clean UI/UX principles  
+- Crafted with ❤️ and clean code
