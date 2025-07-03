@@ -30,13 +30,6 @@ This is my personal developer portfolio designed to reflect my skills, creativit
 - 🎨 **CSS3** – Styling and responsive design  
 - 🌀 **Tailwind CSS** – Utility-first styling framework (if used)
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
 
 ## 🙌 Credits
 
