@@ -1,8 +1,8 @@
-# 🚀 Shiv’s Developer Portfolio
+# 🚀 Shiv Kant's Developer Portfolio
 
-Welcome to my **Updated Portfolio Web** — a sleek, responsive portfolio to showcase my projects, skills, and experience as a web developer.
+Welcome to my **Updated Portfolio Web** — a modern, responsive, and elegant portfolio built using **React + TypeScript** to showcase my projects, skills, and contact information.
 
-[🔗 Live Demo](https://your-live-portfolio-link.com) <!-- Replace with your actual deployed URL -->
+🔗 [Live Demo](https://your-deployment-url.com) <!-- Replace with your actual Netlify or GitHub Pages link -->
 
 ---
 
@@ -21,38 +21,45 @@ Welcome to my **Updated Portfolio Web** — a sleek, responsive portfolio to sho
 
 ## 🧠 About
 
-This is a modern and responsive developer portfolio built with **React.js** and custom CSS/Tailwind (if used). It showcases my work, technical skills, and contact information in a clean and professional layout.
+This is my personal developer portfolio designed to reflect my skills, creativity, and developer journey. It includes sections for About, Skills, Projects, Resume, and Contact — all built with performance and design in mind.
 
 ---
 
 ## ✨ Features
 
-- 🧑 About Me section
-- 🛠 Skills overview
-- 🗂 Project gallery with links
-- 📄 Resume download
-- ✉️ Contact form with email handling
-- 🌐 Fully responsive for all screen sizes
+- 🧑 **About Me** — Learn about my background and experience  
+- 🛠️ **Skills** — A visual list of my core technologies  
+- 🗂️ **Projects** — Highlights of real-world projects with links  
+- 📄 **Resume Download** — Downloadable PDF  
+- ✉️ **Contact Form** — Direct email messaging  
+- 📱 **Fully Responsive** — Mobile-friendly design
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-- **React.js** — Front-end framework
-- **HTML5 & CSS3**
-- **JavaScript (ES6+)**
-- **Tailwind CSS** (if used)
-- **Netlify** or **GitHub Pages** — Deployment
+| Technology       | Description                              | Icon |
+|------------------|------------------------------------------|------|
+| **⚛️ React**        | Frontend framework for UI components     | ⚛️   |
+| **🟦 TypeScript**   | Strongly typed JavaScript                | 🟦   |
+| **🟨 JavaScript**   | Core scripting logic and interactivity   | 🟨   |
+| **📄 HTML5**        | Semantic markup structure                | 📄   |
+| **🎨 CSS3**         | Styling and layout                       | 🎨   |
+| **🌀 Tailwind CSS** | Utility-first CSS framework (if used)    | 🌀   |
+| **🚀 Netlify**      | Deployment and hosting                   | 🚀   |
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 📦 Prerequisites
 
-Make sure you have **Node.js** and **npm** installed.
+Ensure you have the following installed:
 
-### Installation
+- **Node.js** (v14 or later)
+- **npm** or **yarn**
+
+### 🔧 Installation
 
 ```bash
 git clone https://github.com/shivkantx/updated-portfolio-web.git
